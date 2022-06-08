@@ -33,6 +33,6 @@ workflows:
     jobs:
       - say-hello-workflow/run
       - print-hello
-      - print-world
-          requires :
-            - "print-hello"
+      - print-world:
+          requires:
+           - print-hello
